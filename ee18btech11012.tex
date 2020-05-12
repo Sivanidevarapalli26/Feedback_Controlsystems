@@ -1,0 +1,74 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Consider an op amp having a single pole open loop response $G_{o} = 10^5$ and $f_{p} = 10$ Hz.Let op amp be ideal connected in non-inverting terminal with a nominal low frequency of closed loop gain of 100 and wired as a unity gain buffer.
+\subitem Find the frequency at which $|GH| = 1$ and 
+What is its corresponding phase margin
+\solution  
+For a single-pole amplifier, open loop transfer function is 
+
+\begin{align}
+    G\brak{s} = \frac{G_{o}}{1+\frac{s}{\omega_{p}}}
+\end{align}
+Given that $f_{p} = 10$ Hz and $G_{o} =10^5$
+\begin{align}
+G\brak{s}=\frac{G_{o}}{1+\frac{s}{2\pi f_{p}}}
+\implies \frac{10^{5}}{1+\frac{s}{2\pi.10}}
+\end{align}
+So,the open-loop gain of the op amp is 
+\begin{align}
+    G\brak{s}=\frac{10^{5}}{1+\frac{s}{2\pi.10}}
+\end{align}
+For a unity-gain buffer,the feedback factor is
+\begin{align}
+    H = 1
+\end{align}
+Thus, 
+\begin{align}
+    G\brak{\j\omega}H = \frac{10^{5}.1}{1+\frac{\j\omega}{2\pi.10}}
+\end{align}
+To find the frequency at which $|G(j\omega)H|=1$ , we write
+\begin{align}
+    |\frac{10^{5}.1}{1+\frac{\j\omega}{2\pi.10}}| = 1
+\end{align}
+\begin{align}
+    {1+\frac{\omega_{1}^2}{2\pi.10}} = 10^{10}
+\end{align}
+Thus  
+\begin{align}
+    \omega_{1} = 6.283 Mrad/sec
+\implies f_{1} =\frac{\omega_{1}}{2\pi}=1 MHz
+\end{align}
+From definition of phase margin $\alpha = 180\degree + \phi$
+where $\phi$ is the phase of $G(j\omega_{1})H$
+\begin{align}
+\phi = -\tan^{-1}\brak{\frac{\omega_{1}}{2\pi.10}}
+\label{eq:ee18btech11012_phaseGH}
+\end{align}
+At $\omega_{1} = 2\pi.10^{6}rad/sec$
+\begin{align}
+    \phi = -\tan^{-1}\brak{{2\pi.10^{6}}{2\pi.10}}
+    \\
+    \implies \phi = -90\degree (approx)
+\end{align}
+Therefore,the phase margin is
+\begin{align}
+    \alpha = 180\degrqq + \phi
+    \implies \alpha = 180\degree - 90\degree
+    \implies  \alpha = 90\degree
+\end{align}
+\textbf{Hence for frequency $f = 1 MHz$ Hz,\\
+ $|GH| = 1$ and phase margin is 90\degree}
+
+\item The following is the code for bode plot of the given system
+\begin{lstlisting}
+codes/ee18btech11012_1/ee18btech11012_1.py
+\end{lstlisting}
+\item Verification using Bode plot
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11012_1/ee18btech11012_1.eps}
+\caption{}
+\label{fig:ee18btech11012_1}
+\end{figure}
+\end{enumerate}
