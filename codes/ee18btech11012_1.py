@@ -14,7 +14,7 @@ import subprocess
 import shlex
 #end if
 
-#H = 0.01 #setting the value of H for required phase margin
+#H = 1 #unity gain buffer system has feedback factor H=1
 num = [1e5*20*np.pi]
 den = [1,20*np.pi+1e5]
 G = signal.lti(num,den)
