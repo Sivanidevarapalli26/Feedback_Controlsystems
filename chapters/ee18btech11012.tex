@@ -131,5 +131,21 @@ spice/ee18btech11012/ee18btech11012_spiceresult1.py
 \caption{}
 \label{fig:ee18btech11012_spiceresult1}
 \end{figure}
+\item Checking Unstability in the context of PM \\
+\solution A closed loop system is said to be unstable,if the phase margin(PM) of GH is negative\\
+\begin{align}
+PM < 0\degree\\
+\implies \phase{G(f)H(f)} &< -180\degree
+\end{align}
+For the given GH where H=1
+\begin{align}
+\phase{G(f)H(f)} = \phase{G(f)} \implies -\tan^{-1}\brak{\frac{f}{10}} 
+\end{align}
+At $f = \infty$
+\begin{align}
+\phase{G(f)} =-\tan^{\infty}= -90\degree
+\end{align}
+So there won't exist any positive f where $\phase{G(f)} < -180\degree$\\
+Hence,this system is always stable.
 
 \end{enumerate}
