@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.5.1)  19 MAY 2020 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.5.1)  19 MAY 2020 21:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1320,38 +1320,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 \openout5 = `gvv_feedback_manual.toc'.
 
  (./chapters/ee18btech11012.tex
-
-LaTeX Warning: Command \j invalid in math mode on input line 29.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 29.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 29.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 29.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-! Undefined control sequence.
-<argument>  \alpha = 180\degrqq 
-                                + \phi \implies \alpha = 180\degree - 90\deg...
-l.56 \end{align}
-                
-? 
-! Undefined control sequence.
-<argument>  \alpha = 180\degrqq 
-                                + \phi \implies \alpha = 180\degree - 90\deg...
-l.56 \end{align}
-                
-? 
-
-Overfull \hbox (3.93506pt too wide) detected at line 56
+Overfull \hbox (8.41106pt too wide) detected at line 58
 []
  []
 
@@ -1383,7 +1352,7 @@ File: ./figs/ee18btech11012_1/ee18btech11012_spiceresult1.eps Graphic file (typ
 e eps)
 
 <./figs/ee18btech11012_1/ee18btech11012_spiceresult1.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
@@ -1401,12 +1370,12 @@ Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 32149 strings out of 492983
- 686357 string characters out of 6134923
+ 32148 strings out of 492983
+ 686351 string characters out of 6134923
  906562 words of memory out of 5000000
- 35101 multiletter control sequences out of 15000+600000
+ 35100 multiletter control sequences out of 15000+600000
  75595 words of font info for 190 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,13n,67p,511b,1076s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (3 pages, 38088 bytes).
+Output written on gvv_feedback_manual.dvi (3 pages, 38096 bytes).
