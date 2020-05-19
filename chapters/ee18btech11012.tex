@@ -10,7 +10,7 @@ For a single-pole amplifier, open loop transfer function is
 \begin{align}
     G\brak{s} = \frac{G_{o}}{1+\frac{s}{\omega_{p}}}
 \end{align}
-Given that $f_{p} = 10$ Hz and $G_{o} =10^5$
+Given that $f_{p} = 10$ Hz and $G_{o} = 10^5$
 \begin{align}
 G\brak{s}=\frac{G_{o}}{1+\frac{s}{2\pi f_{p}}}
 \implies \frac{10^{5}}{1+\frac{s}{2\pi.10}}
@@ -25,11 +25,11 @@ For a unity-gain buffer,the feedback factor is
 \end{align}
 Thus, 
 \begin{align}
-    G\brak{\j\omega}H = \frac{10^{5}.1}{1+\frac{\j\omega}{2\pi.10}}
+    G\brak{j\omega}H = \frac{10^{5}.1}{1+\frac{j\omega}{2\pi.10}}
 \end{align}
 To find the frequency at which $|G(j\omega)H|=1$ , we write
 \begin{align}
-    |\frac{10^{5}.1}{1+\frac{\j\omega}{2\pi.10}}| = 1
+    |\frac{10^{5}.1}{1+\frac{j\omega}{2\pi.10}}| = 1
 \end{align}
 \begin{align}
     {1+\frac{\omega_{1}^2}{2\pi.10}} = 10^{10}
@@ -52,9 +52,11 @@ At $\omega_{1} = 2\pi.10^{6}rad/sec$
 \end{align}
 Therefore,the phase margin is
 \begin{align}
-    \alpha = 180\degrqq + \phi \implies \alpha = 180\degree - 90\degree\implies  \alpha = 90\degree
+    \alpha = 180\degree + \phi
+ \implies \alpha = 180\degree - 90\degree
+\implies  \alpha = 90\degree
 \end{align}
-\textbf{Hence for frequency $f = 1 MHz$ Hz, $|GH| = 1$ and phase margin is 90\degree}
+\textbf{Hence for frequency $f = 1 MHz$ Hz,$|GH| = 1$ and phase margin is 90\degree}
 \item The following is the code for bode plot of the given system
 \begin{lstlisting}
 codes/ee18btech11012_1/ee18btech11012_1.py
@@ -68,9 +70,9 @@ codes/ee18btech11012_1/ee18btech11012_1.py
 \end{figure}
 \item Realise the above system using a feedback circuit.\\
 \solution
-\begin{figure}[ht!]
+\begin{figure}[!ht]
 	\begin{center}
-		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11012_1/ee18btech11012_fig1.tex}}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11012_1/ee18btech11012_fig1.tex}}
 	\end{center}
 	\caption{}
 	\label{fig:ee18btech11012_fig1}
@@ -98,7 +100,7 @@ Here Output ($V_{o}$) follows the input($V_{f}$) as shown in fig.
 \item Feedback Circuit for this unity buffer system is
 \\
 \solution
-\begin{figure}[ht!]
+\begin{figure}[!ht]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11012_1/ee18btech11012_fig2.tex}}
 	\end{center}
